@@ -15,7 +15,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="offset-2 col-8">
-                <h1>Hello, ADSD!</h1>
+                <h1>profile</h1>
                 <p>
                     <?php
 

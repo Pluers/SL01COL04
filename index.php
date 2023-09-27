@@ -7,6 +7,19 @@
  * POST
  */
 
+$routes = [
+    "/" => "controllers/index.php",
+    "/about" => "controllers/about.php",
+    "/details" => "controllers/details.php",
+    "/contact" => "controllers/contact.php",
+    "/profile" => "controllers/profile.php"
+];
+
+if (array_key_exists($_SERVER['REQUEST_URI'], $routes)) {
+    require $routes[$_SERVER['REQUEST_URI']];
+} else {
+    echo "NO";
+}
 
 
 /**
@@ -31,5 +44,3 @@
  * PDO - connect to database
  *
  */
-
-require_once "views/index.view.php";
