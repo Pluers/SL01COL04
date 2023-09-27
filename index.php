@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Server variabelen
  * SERVER
@@ -30,3 +31,5 @@
  * PDO - connect to database
  *
  */
+
+require_once "views/index.view.php";
